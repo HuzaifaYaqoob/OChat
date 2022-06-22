@@ -8,11 +8,13 @@ import {
 
 // All Screens 
 import WelcomeScreen from './screens/WelcomeScreen/welcomescreen';
+import SplashScreen from './screens/SplashScreen';
 
 const App = () => {
   return (
     <SafeAreaView style={[tw.flex1]} >
-      <WelcomeScreen />
+      {/* <WelcomeScreen /> */}
+      <SplashScreen />
     </SafeAreaView>
   );
 };
