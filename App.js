@@ -17,7 +17,7 @@ const App = () => {
   const new_func = async () => {
     const result = await mmkv.getBool('splashscreen')
     if (result) {
-      setLoading(false)
+      // setLoading(false)
     }
   }
 
@@ -26,7 +26,7 @@ const App = () => {
   }, [])
 
   return (
-    <SafeAreaView style={[tw.flex1]} >
+    <SafeAreaView style={[tw.flex1, tw.bgWhite]} >
       {
         loading ?
           <SplashScreen />
