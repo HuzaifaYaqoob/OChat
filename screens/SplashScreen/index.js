@@ -18,6 +18,8 @@ const SplashScreen = (props) => {
     let arc_g = (w_width * 48.3333) / 100
     let bw_arc = (arc_g - rbw_circle) / 2
 
+    console.log(w_width)
+
     const splash_screen_showed = async () => {
         await mmkv.setBool('splashscreen', true)
     }
@@ -39,7 +41,7 @@ const SplashScreen = (props) => {
                             tw.absolute,
                             {
                                 fontSize: 35,
-                                paddingHorizontal: 20,
+                                paddingHorizontal: 15,
                                 top: 80,
                                 zIndex: 100,
                                 fontWeight: '700',
@@ -209,7 +211,7 @@ const SplashScreen = (props) => {
                             marginHorizontal : 40,
                             backgroundColor : '#F7AF25',
                             marginBottom : 20,
-                            padding : 10,
+                            padding : 12,
                             borderRadius : 40
                         }
                     ]}
@@ -218,8 +220,7 @@ const SplashScreen = (props) => {
                     style={{
                         textAlign : 'center',
                         color : 'white',
-                        fontSize : 22,
-                        fontWeight : '600'
+                        fontSize : 18,
                     }}
 
                     >Start Now</Text>
