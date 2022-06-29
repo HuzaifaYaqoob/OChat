@@ -11,6 +11,11 @@ import { mmkv } from './Redux/Storage/storage';
 import WelcomeScreen from './screens/WelcomeScreen/welcomescreen';
 import SplashScreen from './screens/SplashScreen';
 
+// Navigators 
+import { NavigationContainer } from '@react-navigation/native';
+import TabNavigator from './Navigators/TabNavigator';
+
+
 const App = () => {
   const [loading, setLoading] = useState(true)
 
@@ -27,12 +32,15 @@ const App = () => {
 
   return (
     <SafeAreaView style={[tw.flex1, tw.bgWhite]} >
-      {
+      {/* {
         loading ?
           <SplashScreen />
           :
           <WelcomeScreen />
-      }
+      } */}
+      <NavigationContainer>
+        <TabNavigator />
+      </NavigationContainer>
     </SafeAreaView>
   );
 };
