@@ -10,7 +10,11 @@ const AddStack = createNativeStackNavigator()
 const AddButtonStackNavigator = () => {
     return (
         <>
-            <AddStack.Navigator>
+            <AddStack.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
                 <AddStack.Screen name="AddStackScreen" component={WelcomeScreen} />
             </AddStack.Navigator>
         </>

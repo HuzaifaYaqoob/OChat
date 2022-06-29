@@ -9,7 +9,11 @@ const SettingsStack = createNativeStackNavigator()
 const SettingsStackNavigator = () => {
     return (
         <>
-            <SettingsStack.Navigator>
+            <SettingsStack.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
                 <SettingsStack.Screen name="SettingStackScreen" component={WelcomeScreen} />
             </SettingsStack.Navigator>
         </>

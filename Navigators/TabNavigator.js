@@ -18,6 +18,7 @@ const TabNavigator = () => {
     return (
         <>
             <Tab.Navigator
+                labeled={false}
                 screenOptions={{
                     tabBarColor: 'white',
                     title: 'Home',
@@ -31,15 +32,37 @@ const TabNavigator = () => {
                     name="HomeTabScreen"
                     component={HomeStackNavigation}
                     options={{
-                        tabBarIcon: ({focused}) => <TabIcon icon='HOME' active={focused} />,
-                        title: '',
-                        tabBarLabel : ''
+                        tabBarIcon: ({ focused }) => <TabIcon icon='HOME' active={focused} />,
                     }}
                 />
-                <Tab.Screen name="StoriesTabScreen" component={StoriesStackNavigation} />
-                <Tab.Screen name="AddButtonTabScreen" component={AddButtonStackNavigation} />
-                <Tab.Screen name="CallsTabScreen" component={CallsStackNavigation} />
-                <Tab.Screen name="SettingsTabScreen" component={SettingsStackNavigation} />
+                <Tab.Screen
+                    name="StoriesTabScreen"
+                    component={StoriesStackNavigation}
+                    options={{
+                        tabBarIcon: ({ focused }) => <TabIcon icon='STORY' active={focused} />,
+                    }}
+                />
+                <Tab.Screen
+                    name="AddButtonTabScreen"
+                    component={AddButtonStackNavigation}
+                    options={{
+                        tabBarIcon: ({ focused }) => <TabIcon icon='ADD' active={focused} />,
+                    }}
+                />
+                <Tab.Screen
+                    name="CallsTabScreen"
+                    component={CallsStackNavigation}
+                    options={{
+                        tabBarIcon: ({ focused }) => <TabIcon icon='CALL' active={focused} />,
+                    }}
+                />
+                <Tab.Screen
+                    name="SettingsTabScreen"
+                    component={SettingsStackNavigation}
+                    options={{
+                        tabBarIcon: ({ focused }) => <TabIcon icon='SETTING' active={focused} />,
+                    }}
+                />
             </Tab.Navigator>
         </>
     )

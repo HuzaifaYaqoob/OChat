@@ -9,7 +9,11 @@ const StoriesStack = createNativeStackNavigator()
 const StoriesStackNavigator = () => {
     return (
         <>
-            <StoriesStack.Navigator>
+            <StoriesStack.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
                 <StoriesStack.Screen name="StoryStackScreen" component={WelcomeScreen} />
             </StoriesStack.Navigator>
         </>

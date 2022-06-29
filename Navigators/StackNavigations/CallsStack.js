@@ -9,7 +9,11 @@ const CallStack = createNativeStackNavigator()
 const CallsStackNavigator = () => {
     return (
         <>
-            <CallStack.Navigator>
+            <CallStack.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
                 <CallStack.Screen name="CallListScreen" component={WelcomeScreen} />
             </CallStack.Navigator>
         </>
