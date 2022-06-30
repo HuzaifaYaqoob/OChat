@@ -23,8 +23,7 @@ const TabNavigator = () => {
                     tabBarColor: 'white',
                     title: 'Home',
                 }}
-                activeColor='red'
-                inactiveColor="red"
+                activeColor='gray'
                 backBehavior="history"
                 barStyle={{ backgroundColor: 'tomato' }}
             >

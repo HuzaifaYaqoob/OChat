@@ -7,7 +7,7 @@ import { Text } from "react-native";
 const HomeChatScreen = () => {
     return (
         <>
-            <Text>home chat screen</Text>
+            <Text style={{color:'black'}}>home chat screen hello</Text>
         </>
     )
 }
