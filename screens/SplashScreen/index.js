@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react'
-import { Text, Dimensions, SafeAreaView, View, StyleSheet } from 'react-native'
+import { Text, Dimensions, SafeAreaView, View, StyleSheet, } from 'react-native'
 import { tw } from 'react-native-tailwindcss'
 
 import { mmkv } from '../../Redux/Storage/storage'

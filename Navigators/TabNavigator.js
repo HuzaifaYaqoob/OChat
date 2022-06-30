@@ -21,17 +21,36 @@ const TabNavigator = () => {
                 labeled={false}
                 screenOptions={{
                     tabBarColor: 'white',
-                    title: 'Home',
                 }}
-                activeColor='gray'
+                activeColor='white'
                 backBehavior="history"
-                barStyle={{ backgroundColor: 'tomato' }}
+
+                barStyle={{
+                    // backgroundColor: 'tomato',
+                    position: 'absolute',
+                    bottom: 10,
+                    left: 10,
+                    right: 10,
+                    height: 54,
+                    borderRadius: 10,
+                    elevation: 1,
+                    overflow: 'hidden',
+                    shadowColor: 'darkgray',
+                    shadowOffset: {
+                        width: 0,
+                        height: 0
+                    },
+                    shadowOpacity: 1,
+                    shadowRadius: 1
+                }}
             >
                 <Tab.Screen
                     name="HomeTabScreen"
                     component={HomeStackNavigation}
                     options={{
                         tabBarIcon: ({ focused }) => <TabIcon icon='HOME' active={focused} />,
+                        // tabBarColor : 'red',
+                        // tabBarLabel : 'hello'
                     }}
                 />
                 <Tab.Screen

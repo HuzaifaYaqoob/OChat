@@ -36,14 +36,35 @@ const StoryIcon = (props) => (
 
 const AddIcon = (props) => (
   <>
-    <Svg width={24} height={24} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <Path d="M5.647 11.294h12.706v1.412H5.647v-1.412Z" fill="#FBBF1E" />
-      <Path d="M11.294 5.647h1.412v12.706h-1.412V5.647Z" fill="#FBBF1E" />
-      <Path
-        d="M12 24C5.365 24 0 18.635 0 12S5.365 0 12 0s12 5.365 12 12-5.365 12-12 12Zm0-22.588A10.574 10.574 0 0 0 1.412 12c0 5.859 4.73 10.588 10.588 10.588 5.859 0 10.588-4.73 10.588-10.588 0-5.859-4.73-10.588-10.588-10.588Z"
-        fill="#FBBF1E"
-      />
-    </Svg>
+    <View
+      style={{
+        width: 50,
+        height: 50,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#FBBF1E',
+        bottom: 15,
+        borderRadius: 40,
+        shadowColor: '#FBBF1E',
+        shadowOffset: {
+          width: 0,
+          height: 1,
+        },
+        shadowOpacity: 1,
+        shadowRadius: 1,
+        elevation: 10
+      }}
+    >
+      <Svg width={24} height={24} fill="none" >
+        <Path d="M5.647 11.294h12.706v1.412H5.647v-1.412Z" fill="#fff" />
+        <Path d="M11.294 5.647h1.412v12.706h-1.412V5.647Z" fill="#fff" />
+        <Path
+          d="M12 24C5.365 24 0 18.635 0 12S5.365 0 12 0s12 5.365 12 12-5.365 12-12 12Zm0-22.588A10.574 10.574 0 0 0 1.412 12c0 5.859 4.73 10.588 10.588 10.588 5.859 0 10.588-4.73 10.588-10.588 0-5.859-4.73-10.588-10.588-10.588Z"
+          fill="#fff"
+        />
+      </Svg>
+    </View>
   </>
 )
 
